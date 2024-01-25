@@ -13,6 +13,7 @@ typedef struct TransportCard {
     struct TransportCard* next;
 } TransportCard;
 
+//define all the function here
 TransportCard* createTransportCard(TransportCard *head);
 TransportCard* searchTransportCard(TransportCard* head, char targetID[15]);
 TransportCard* deleteTransportCard(TransportCard* head, char targetID[15]);
@@ -42,7 +43,7 @@ int main() {
     strcpy(card1->access_road, "ECB");
     card1->payment_due = 4500;
     card1->next = card;
-
+    
     TransportCard* head = card1;
     int choice;
     char targetID[15];
